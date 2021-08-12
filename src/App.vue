@@ -2,19 +2,19 @@
 <div class="container">
   <h1>{{ title }}</h1>
   <TaskForm />
-  <TaskList />
+  
 </div>
 </template>
 
 <script>
 import TaskForm from './components/TaskForm.vue';
-import TaskList from './components/TaskList.vue';
+
 
 export default {
   name: 'App',
   components: {
     TaskForm,
-    TaskList
+    
   },
   methods: {
     saySomething() {

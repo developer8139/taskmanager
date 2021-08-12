@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="list-container">
         <ul class="list" :key="task" v-for="task in tasks">
             <li class="item">{{ task }}</li>
         </ul>
@@ -9,7 +9,7 @@
 <script>
     export default {
         props: {
-            tasks: []
+            tasks: Array
         }
     }
 </script>
@@ -18,10 +18,15 @@
     .item {
         list-style: none;
         border: 2px solid greenyellow;
+        padding: 20px;
     }
 
     .list {
         display: flex;
         flex-direction: column;
+    }
+
+    .list-container {
+        width: 455px;
     }
 </style>
